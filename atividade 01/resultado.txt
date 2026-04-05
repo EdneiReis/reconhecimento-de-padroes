@@ -1,0 +1,22 @@
+=================================================================
+SÍNTESE DOS RESULTADOS - CLASSIFICADOR NN (BASE IRIS)
+=================================================================
+ Treino (%)  Taxa Média  Taxa Máxima  Taxa Mínima  Variância
+         10      0.9365       0.9704       0.8815     0.0006
+         20      0.9456       0.9750       0.9083     0.0004
+         30      0.9463       0.9714       0.8667     0.0004
+         40      0.9496       0.9667       0.9111     0.0002
+         50      0.9516       0.9733       0.9200     0.0002
+         60      0.9517       0.9833       0.9167     0.0002
+         70      0.9563       1.0000       0.8889     0.0008
+         80      0.9667       1.0000       0.8667     0.0011
+=================================================================
+
+Análise Objetiva do Resultado
+A curva ascendente demonstra o princípio básico de aprendizado de máquina: quanto maior a quantidade de dados apresentados ao algoritmo na fase de treinamento, melhor é a sua capacidade de generalização e predição.
+
+Com 10% de treino, o algoritmo tem pouca informação sobre o padrão das classes, resultando na menor taxa média de acertos (em torno de 93,6%).
+
+Conforme a proporção de treino sobe até 80%, a taxa de erro cai, e a taxa de acerto atinge o pico (aproximadamente 96,6%).
+
+A base Iris é linearmente separável em grande parte, o que justifica a alta precisão mesmo com poucos dados. No entanto, a variância relativamente baixa indica que o modelo é consistente em suas previsões, mesmo com diferentes amostras de treino.

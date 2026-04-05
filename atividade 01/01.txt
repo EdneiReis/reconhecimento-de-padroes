@@ -1,0 +1,11 @@
+PRIMEIRO EXERCÍCIO COMPUTACIONAL
+ Implementar o classificador NN;
+ Utilizar a base de dados Iris.data
+ http://archive.ics.uci.edu/ml/
+ Apresentar uma tabela com a síntese do resultado:
+ Tamanho da Tabela Inicial (variando de 10% a 80%);
+ Taxa de acerto médio;
+ Taxa de acerto máximo;
+ Taxa de acerto mínimo;
+ Variância
+ Apresentar o gráfico da Taxa média de acerto

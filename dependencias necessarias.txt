@@ -1,0 +1,7 @@
+- python3.10
+- venv com todas as bibliotecas necessárias
+- Instalar o requeriments.txt
+
+Execução do código com a venv ativada:
+- Atividade 01: python3.10 atividade/01.py
+- Atividade 02: python3.10 atividade/02.py
