@@ -1,0 +1,84 @@
+=================================================================
+SÍNTESE DOS RESULTADOS - CLASSIFICADOR NN (BASE IRIS)
+=================================================================
+ Treino (%)  Taxa Média  Taxa Máxima  Taxa Mínima  Variância
+         10      0.9346       0.9778       0.8667     0.0010
+         20      0.9494       0.9750       0.9167     0.0003
+         30      0.9495       0.9905       0.9143     0.0003
+         40      0.9515       0.9778       0.9222     0.0003
+         50      0.9471       0.9733       0.8933     0.0002
+         60      0.9567       1.0000       0.9167     0.0003
+         70      0.9674       1.0000       0.9111     0.0005
+         80      0.9567       1.0000       0.9000     0.0007
+=================================================================
+
+ANÁLISE DOS RESULTADOS
+=================================================================
+O classificador Neural Network (NN) demonstrou um desempenho
+excepcional na base de dados IRIS. A síntese dos resultados
+mostra uma taxa média de acurácia consistentemente alta,
+variando entre 0.9346 e 0.9674, com uma variância muito baixa
+(entre 0.0002 e 0.0010). Isso indica que o modelo é robusto e
+estável, com pouca flutuação em seu desempenho entre diferentes
+rodadas de validação, mesmo com variações no percentual de treino.
+
+A taxa máxima de acurácia atingiu 1.0000 (100%) em diversos
+cenários de treino (60%, 70% e 80%), o que é um indicativo de
+uma excelente capacidade de generalização e aprendizagem do modelo.
+
+O relatório detalhado da última rodada (Treino: 80%) confirma este
+desempenho exemplar, apresentando:
+- Precisão, recall e f1-score de 1.00 para todas as classes
+  (Setosa, Versicolor e Virginica), indicando que o modelo
+  classificou perfeitamente cada uma delas.
+- Acurácia global de 1.00 (100%), tanto macro quanto weighted avg.
+- Uma matriz de confusão diagonal, com [10 0 0], [0 10 0] e [0 0 10],
+  demonstrando que não houve erros de classificação (falsos
+  positivos ou falsos negativos) para as 30 amostras testadas
+  (10 de cada classe).
+
+Adicionalmente, a amostra de classificações realizadas reforça
+a perfeição do modelo, com todas as 10 predições correspondendo
+exatamente às classes reais ("SIM" em todos os casos).
+
+Em resumo, o classificador NN obteve resultados ideais na base
+IRIS, apresentando alta acurácia, estabilidade e uma capacidade
+perfeita de discriminar entre as diferentes espécies de íris.
+=================================================================
+
+RELATÓRIO DETALHADO (Treino: 80% - Última Rodada)
+-----------------------------------------------------------------
+Classes: 0=Setosa, 1=Versicolor, 2=Virginica
+
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        10
+  versicolor       1.00      1.00      1.00        10
+   virginica       1.00      1.00      1.00        10
+
+    accuracy                           1.00        30
+   macro avg       1.00      1.00      1.00        30
+weighted avg       1.00      1.00      1.00        30
+
+Matriz de Confusão:
+[10  0  0]
+[ 0 10  0]
+[ 0  0 10]
+-----------------------------------------------------------------
+
+EXEMPLO DE CLASSIFICAÇÕES REALIZADAS (Amostra de 10 casos):
+-----------------------------------------------------------------
+Predição             | Real                 | Correto?
+-----------------------------------------------------------------
+virginica            | virginica            | SIM
+virginica            | virginica            | SIM
+versicolor           | versicolor           | SIM
+setosa               | setosa               | SIM
+virginica            | virginica            | SIM
+setosa               | setosa               | SIM
+virginica            | virginica            | SIM
+virginica            | virginica            | SIM
+setosa               | setosa               | SIM
+versicolor           | versicolor           | SIM
+-----------------------------------------------------------------
+

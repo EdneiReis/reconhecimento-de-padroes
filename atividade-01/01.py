@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 # 1. Carregar a base de dados Iris
 iris = load_iris()
@@ -57,7 +57,32 @@ print("="*65)
 print(df_resultados.to_string(index=False, float_format="%.4f"))
 print("="*65 + "\n")
 
-# 5. Apresentar Gráfico da Taxa Média de Acertos
+# 5. Relatório Detalhado (última rodada do maior tamanho de treino)
+print("RELATÓRIO DETALHADO (Treino: 80% - Última Rodada)")
+print("-" * 65)
+print("Classes: 0=Setosa, 1=Versicolor, 2=Virginica\n")
+print(classification_report(y_test, y_pred, target_names=iris.target_names))
+
+print("Matriz de Confusão:")
+print(confusion_matrix(y_test, y_pred))
+print("-" * 65 + "\n")
+
+# 6. Exemplo de Classificações Realizadas
+print("EXEMPLO DE CLASSIFICAÇÕES REALIZADAS (Amostra de 10 casos):")
+print("-" * 65)
+print(f"{'Predição':<20} | {'Real':<20} | {'Correto?'}")
+print("-" * 65)
+
+# Pega uma amostra de 10 para não poluir o terminal
+for i in range(10):
+    pred_name = iris.target_names[y_pred[i]]
+    real_name = iris.target_names[y_test[i]]
+    is_correct = "SIM" if y_pred[i] == y_test[i] else "NÃO"
+    print(f"{pred_name:<20} | {real_name:<20} | {is_correct}")
+
+print("-" * 65 + "\n")
+
+# 7. Apresentar Gráfico da Taxa Média de Acertos
 plt.figure(figsize=(8, 5))
 plt.plot(df_resultados["Treino (%)"], df_resultados["Taxa Média"], marker='o', linestyle='-', color='blue')
 plt.title("Classificador NN: Taxa Média de Acertos vs Tamanho do Treino")
