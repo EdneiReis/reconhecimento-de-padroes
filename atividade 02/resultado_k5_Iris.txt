@@ -1,0 +1,16 @@
+Treino (%)	Média	Máximo	Mínimo	Variância
+10	0.9103703703703705	0.9629629629629629	0.837037037037037	0.0008609053497942388
+20	0.9358333333333335	0.9833333333333333	0.8666666666666667	0.000704398148148148
+30	0.9571428571428572	0.9904761904761905	0.9047619047619048	0.0004036281179138318
+40	0.9614814814814815	0.9888888888888889	0.9333333333333333	0.00015418381344307251
+50	0.9595555555555555	0.9866666666666667	0.9333333333333333	0.0002664691358024695
+60	0.9588888888888889	0.9833333333333333	0.9166666666666666	0.0004950617283950615
+70	0.9666666666666668	1.0	0.9333333333333333	0.00035390946502057545
+80	0.9577777777777778	1.0	0.8666666666666667	0.0011802469135802462
+
+Análise Objetiva do Resultado (Iris K=5)
+O uso de K=5 vizinhos consolidou a estabilidade do modelo na base Iris. Assim como nos experimentos anteriores, a tendência de crescimento conforme o aumento do treino se mantém, mas com um diferencial importante: o algoritmo atingiu uma performance de 96,1% já com 40% de dados de treinamento, demonstrando uma convergência mais rápida para o acerto ideal.
+
+Ao considerar um número maior de vizinhos (5), o classificador torna-se ainda mais resistente a ruídos pontuais. Isso é visível na variância, que se manteve extremamente baixa na faixa central do experimento (40% a 70% de treino). A capacidade de atingir a precisão máxima (100%) em rodadas com 70% e 80% de treino reafirma que a base Iris possui classes com fronteiras bem definidas, facilmente mapeadas pelo algoritmo K-NN.
+
+Em suma, para a base Iris, o K=5 oferece uma das melhores relações entre rapidez de aprendizado e confiabilidade, embora os resultados de K=3 e K=5 sejam muito próximos, indicando que a base já está bem saturada de informação a partir de K >= 3.

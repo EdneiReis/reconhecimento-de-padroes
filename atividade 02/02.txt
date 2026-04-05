@@ -1,0 +1,22 @@
+SEGUNDO EXERCÍCIO COMPUTACIONAL
+ Implementar o classificador K-NN;
+
+ Utilizar as bases de dados Iris.data e Wine.data;
+
+ http://archive.ics.uci.edu/ml/
+
+ Os valores de K devem ser: 1, 3 e 5;
+
+ Apresentar uma tabela com a síntese do resultado para cada valor de K:
+
+ Tamanho da Tabela Inicial (variando de 10% a 80%);
+
+ Taxa de acerto médio;
+
+ Taxa de acerto máximo;
+
+ Taxa de acerto mínimo;
+
+ Variância;
+
+ Apresentar o gráfico da Taxa média de acertos;

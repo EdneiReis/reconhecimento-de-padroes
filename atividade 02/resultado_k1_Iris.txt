@@ -1,0 +1,16 @@
+Treino (%)	Média	Máximo	Mínimo	Variância
+10	0.9362962962962963	0.9703703703703703	0.8444444444444444	0.001019112940100594
+20	0.9452777777777777	0.975	0.8833333333333333	0.0004753858024691356
+30	0.9501587301587301	0.9809523809523809	0.8857142857142857	0.0004757873519778278
+40	0.9555555555555554	0.9777777777777777	0.9333333333333333	0.00013991769547325113
+50	0.9542222222222223	0.9733333333333334	0.8933333333333333	0.00030439506172839545
+60	0.9622222222222221	0.9833333333333333	0.9333333333333333	0.00020246913580246898
+70	0.9555555555555556	1.0	0.9111111111111111	0.0005596707818930038
+80	0.9544444444444444	1.0	0.8666666666666667	0.0013691358024691353
+
+Análise Objetiva do Resultado (Iris K1)
+A curva demonstra o princípio básico de aprendizado de máquina: quanto maior a quantidade de dados na fase de treinamento, melhor a capacidade de predição. Com apenas 10% de treino, o algoritmo obteve a menor taxa média (93,6%).
+
+Entretanto, observa-se que o desempenho atingiu seu ápice com 60% de treino (96,2%), apresentando uma leve oscilação nos patamares de 70% e 80%. Isso ocorre porque, em bases menores como a Iris, aumentar demais o treino pode reduzir drasticamente o tamanho do conjunto de teste, tornando a métrica mais sensível a erros pontuais (como visto no aumento da variância em 80%, que saltou para 0.0013).
+
+A base Iris é linearmente separável em grande parte, o que justifica a precisão acima de 93% em todos os cenários. A variância manteve-se baixa na maior parte do tempo, confirmando a consistência do classificador NN (K=1) para este problema.

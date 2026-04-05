@@ -1,0 +1,16 @@
+Treino (%)	Média	Máximo	Mínimo	Variância
+10	0.6892339544513459	0.7204968944099379	0.5962732919254659	0.0009888593118406784
+20	0.6925407925407925	0.7482517482517482	0.6153846153846154	0.0007840100847093856
+30	0.6960000000000001	0.744	0.648	0.0005418666666666661
+40	0.6934579439252336	0.7476635514018691	0.6355140186915887	0.000800069875098262
+50	0.6842696629213483	0.7528089887640449	0.5955056179775281	0.0014589908681563774
+60	0.698148148148148	0.7777777777777778	0.625	0.001478052126200275
+70	0.7037037037037038	0.7962962962962963	0.5925925925925926	0.0026291723822588022
+80	0.7212962962962962	0.9166666666666666	0.5833333333333334	0.003882887517146777
+
+Os resultados de Wine (K=3) 
+trazem um fenômeno muito comum em aprendizado de máquina: a estabilidade.Se você comparar com o K=1 anterior, a média não subiu drasticamente (ficou entre 68,9% e 72,1%), mas a Variância nos primeiros níveis de treino (10% a 30%) caiu bastante. Isso significa que o modelo parou de "chutar" tanto e ficou mais consistente.Aqui está a análise para o seu relatório:Análise Objetiva do Resultado (Wine K=3)Ao configurar o classificador com K=3 para a base Wine, observa-se uma busca por maior estabilidade em um conjunto de dados nitidamente complexo. A taxa média de acerto inicia em 68,9% e mostra uma progressão mais suave, atingindo 72,1% com 80% de treinamento.
+
+O ponto principal desta análise é a redução da variância nos patamares iniciais de treinamento (comparado ao K=1). Ao consultar os três vizinhos mais próximos, o algoritmo consegue filtrar pequenas flutuações e ruídos da base Wine, resultando em previsões menos erráticas.
+
+Contudo, o fato de a média não ter disparado para valores próximos a 90% (como na Iris) reforça que a base Wine possui classes com alta sobreposição e atributos que exigem uma fronteira de decisão mais sofisticada. Mesmo com o aumento de dados, o "teto" de acerto para o K=3 nesta base demonstra que o problema de classificação aqui é significativamente mais desafiador do que o encontrado no primeiro exercício.

@@ -1,0 +1,16 @@
+Treino (%)	Média	Máximo	Mínimo	Variância
+10	0.6753623188405797	0.7391304347826086	0.5652173913043478	0.0012986467428811475
+20	0.6846153846153846	0.7342657342657343	0.6083916083916084	0.0010672078504246338
+30	0.6813333333333335	0.752	0.616	0.0012248888888888878
+40	0.6915887850467289	0.7476635514018691	0.616822429906542	0.0010597723236381639
+50	0.7228464419475654	0.7865168539325843	0.6404494382022472	0.001265272342156574
+60	0.7324074074074074	0.8472222222222222	0.625	0.0015166323731138542
+70	0.737037037037037	0.8148148148148148	0.5925925925925926	0.0022953818015546412
+80	0.750925925925926	0.8611111111111112	0.5555555555555556	0.004603052126200275
+
+Análise Objetiva do Resultado (Wine K1)
+Diferente do observado na base Iris, os resultados da base Wine revelam a complexidade superior deste conjunto de dados. Embora a tendência de melhora conforme o aumento do treino persista, a taxa média de acerto inicia em um patamar significativamente menor (67,5%) e atinge o ápice de apenas 75% com 80% de treinamento.
+
+Essa diferença ocorre devido à alta dimensionalidade da base Wine (13 atributos contra 4 da Iris) e à possível sobreposição das classes no espaço de características. Com apenas um vizinho (K=1), o modelo torna-se extremamente sensível a ruídos, o que é evidenciado pelo aumento considerável da variância conforme o treino cresce (chegando a 0.0046 com 80% de treino).
+
+Em bases complexas como esta, o classificador de vizinho único (NN) sofre para generalizar, pois pequenas variações nas amostras de treino podem mudar drasticamente a predição, resultando em uma performance mais instável e modesta quando comparada a problemas linearmente separáveis.

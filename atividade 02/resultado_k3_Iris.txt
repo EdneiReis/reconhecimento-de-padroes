@@ -1,0 +1,16 @@
+Treino (%)	Média	Máximo	Mínimo	Variância
+10	0.9160493827160495	0.9777777777777777	0.8	0.0012449321749733267
+20	0.9433333333333334	0.975	0.8666666666666667	0.0005851851851851852
+30	0.9526984126984127	0.9809523809523809	0.8952380952380953	0.00037178130511463794
+40	0.9522222222222219	0.9777777777777777	0.9111111111111111	0.0002893004115226336
+50	0.9582222222222222	1.0	0.9333333333333333	0.0002694320987654323
+60	0.9616666666666666	1.0	0.9	0.0005398148148148143
+70	0.9614814814814815	1.0	0.9111111111111111	0.00039286694101508846
+80	0.9644444444444443	1.0	0.8666666666666667	0.0011061728395061724
+
+Análise Objetiva do Resultado (Iris K=3)
+Ao configurar o classificador para K=3, observa-se uma melhora na robustez do modelo em comparação ao K=1. O princípio de que o aumento da base de treinamento eleva a taxa de acerto permanece evidente, com a média partindo de 91,6% (10% de treino) e atingindo o patamar de 96,4% (80% de treino).
+
+Um ponto de destaque é a capacidade de atingir a precisão máxima (100%) mais cedo, já a partir de 50% de treinamento em algumas rodadas. Isso indica que considerar os três vizinhos mais próximos, em vez de apenas um, ajuda a suavizar possíveis ruídos na base de dados, permitindo que o algoritmo tome decisões mais seguras.
+
+A variância manteve-se extremamente baixa (na casa de 0.0002 a 0.0005 na maior parte do tempo), o que prova que o K=3 é uma configuração altamente estável para a base Iris, oferecendo um equilíbrio ideal entre aprendizado e generalização.
