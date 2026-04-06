@@ -1,0 +1,20 @@
+Treino (%)  Media   Maximo  Minimo  Variancia
+10          0.8978  0.9481  0.8000  0.0016
+20          0.9225  0.9500  0.8583  0.0006
+30          0.9333  0.9714  0.9048  0.0004
+40          0.9189  0.9444  0.8778  0.0003
+50          0.9093  0.9333  0.8933  0.0002
+60          0.9250  0.9500  0.8833  0.0006
+70          0.9244  0.9778  0.8444  0.0015
+80          0.9333  1.0000  0.8333  0.0024
+
+Matriz de Confusao:
+[[15  0  0]
+ [ 0 10  2]
+ [ 0  2 16]]
+
+
+Na segunda execução com a base Iris, os resultados mantêm alta taxa de acerto, entre aproximadamente 89% e 93%.
+Nota-se leve oscilação nos valores conforme o aumento do treino, sem crescimento contínuo.
+A variância permanece baixa, indicando estabilidade.
+A matriz de confusão mostra pequeno número de erros, principalmente entre duas classes, confirmando bom desempenho apesar das variações dos dados.

@@ -1,0 +1,20 @@
+Treino (%)  Media   Maximo  Minimo  Variancia
+10          0.6863  0.7391  0.4596  0.0058
+20          0.7238  0.7483  0.6993  0.0002
+30          0.7136  0.7600  0.6800  0.0008
+40          0.7000  0.7196  0.6729  0.0002
+50          0.7112  0.7865  0.6517  0.0011
+60          0.7319  0.7917  0.6806  0.0012
+70          0.7093  0.7778  0.5741  0.0032
+80          0.7333  0.8056  0.6389  0.0033
+
+Matriz de Confusâo:
+[[19  0  1]
+ [ 1 15  5]
+ [ 1  5  7]]
+ 
+
+Os resultados da base Wine apresentam taxa de acerto moderada, variando entre aproximadamente 68% e 73%.
+Observa-se leve tendência de melhora com o aumento do tamanho do treino, porém sem crescimento linear, havendo oscilações.
+A variância é um pouco maior em alguns pontos, indicando menor estabilidade em comparação à base Iris.
+A matriz de confusão mostra maior número de erros, principalmente entre a segunda e terceira classes, evidenciando maior dificuldade de separação dos dados.

@@ -1,0 +1,12 @@
+TERCEIRO EXERCÍCIO COMPUTACIONAL
+ Implementar o classificador DMC;
+ Utilizar as base de dados Iris.data e Wine.data
+ http://archive.ics.uci.edu/ml/
+ Apresentar uma tabela com a síntese do resultado:
+ Tamanho da Tabela Inicial (variando de 10% a 80%);
+ Taxa de acerto médio;
+ Taxa de acerto máximo;
+ Taxa de acerto mínimo;
+ Variância
+ Apresentar os gráficos das Taxas média de acertos;
+ Apresentar as Matrizes de Confusão para cada classe

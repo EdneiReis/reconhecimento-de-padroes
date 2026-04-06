@@ -1,0 +1,20 @@
+Treino (%)  Media   Maximo  Minimo  Variancia
+10          0.7043  0.7329  0.6708  0.0004
+20          0.7098  0.7343  0.6853  0.0003
+30          0.7160  0.7440  0.6800  0.0003
+40          0.7103  0.7664  0.6168  0.0015
+50          0.7191  0.7640  0.6629  0.0009
+60          0.7125  0.7778  0.5833  0.0029
+70          0.7333  0.7963  0.6481  0.0019
+80          0.7111  0.8333  0.5833  0.0044
+
+Matriz de Confusao:
+[[21  0  2]
+ [ 2 16  6]
+ [ 0  1  6]]
+
+
+Na segunda execução com a base Wine, os resultados permanecem na faixa de aproximadamente 70% a 73% de acerto.
+Os valores apresentam oscilações conforme o aumento do treino, sem um padrão de crescimento contínuo.
+A variância aumenta em alguns níveis de treino, indicando instabilidade maior em determinadas divisões dos dados.
+A matriz de confusão confirma a dificuldade do modelo, com erros frequentes entre as classes, principalmente entre a segunda e terceira.
