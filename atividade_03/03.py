@@ -28,7 +28,7 @@ def executar(nome, loader):
     tamanhos = np.arange(0.1, 0.9, 0.1)
     medias = []
     
-    # arquivo de 
+    # arquivo de resultado
     arquivo = open(f"resultado_{nome}.txt", "w")
     arquivo.write("Treino (%)  Media   Maximo  Minimo  Variancia\n")
     
